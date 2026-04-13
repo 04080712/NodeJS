@@ -1,0 +1,68 @@
+🇺🇸 English Version
+Export and Import with JavaScript
+
+Today I learned about export and import in JavaScript. There are two main ways to handle modules:
+
+CJS (CommonJS) – learned today
+ESM (ECMAScript Modules)
+
+To use CommonJS (CJS) and export functionalities from a module, we need to explicitly define what will be exported.
+
+If you want to export a single item (variable or function), you can do it like this:
+
+module.exports = itemToExport;
+
+If you want to export multiple items, you can use:
+
+module.exports = {
+  item1,
+  item2,
+  function1,
+  function2,
+};
+
+To import a module, you can use:
+
+const p = require('path/to/file');
+
+To use a specific function from the imported module:
+
+p.someFunction();
+
+You can also import only specific functions using destructuring:
+
+const { functionName } = require('path/to/file');
+🇧🇷 Versão em Português
+Exportação e Importação com JavaScript
+
+Hoje aprendi sobre exportação e importação em JavaScript. Existem duas formas principais de trabalhar com módulos:
+
+CJS (CommonJS) – aprendido hoje
+ESM (ECMAScript Modules)
+
+Para utilizar o CommonJS (CJS) e exportar funcionalidades de um módulo, precisamos definir explicitamente o que será exportado.
+
+Se for exportar apenas um item (variável ou função), utilizamos:
+
+module.exports = itemASerExportado;
+
+Se for exportar múltiplos itens:
+
+module.exports = {
+  item1,
+  item2,
+  funcao1,
+  funcao2,
+};
+
+Para importar um módulo:
+
+const p = require('caminho/do/arquivo');
+
+Para utilizar uma função específica:
+
+p.funcaoEscolhida();
+
+Também é possível importar apenas funções específicas utilizando destructuring:
+
+const { funcao } = require('caminho/do/arquivo');
